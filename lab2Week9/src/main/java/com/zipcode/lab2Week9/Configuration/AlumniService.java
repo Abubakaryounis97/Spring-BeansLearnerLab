@@ -2,7 +2,7 @@ package com.zipcode.lab2Week9.Configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.zipcode.lab2Week9.Instructor;
 import com.zipcode.lab2Week9.Instructors;
@@ -10,7 +10,7 @@ import com.zipcode.lab2Week9.Students;
 
 import jakarta.annotation.PostConstruct; // or javax.annotation.PostConstruct depending on your setup
 
-@Component
+@Service
 public class AlumniService {
 
     @Autowired
