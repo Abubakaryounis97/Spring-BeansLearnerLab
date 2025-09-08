@@ -14,7 +14,7 @@ import jakarta.annotation.PostConstruct; // or javax.annotation.PostConstruct de
 public class AlumniService {
 
     @Autowired
-    @Qualifier("previousStudents")
+    @Qualifier("previousStudents") // Ensure this matches the bean name in StudentConfig
     private Students previousStudents;
 
     @Autowired
